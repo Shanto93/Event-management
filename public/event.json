@@ -1,0 +1,63 @@
+[
+    {
+      "id": 1,
+      "event_type": "Wedding",
+      "date": "2023-07-15",
+      "location": "Grand Mansion Estate",
+      "organizer": "Dream Events Planning",
+      "details": "A fairytale wedding at the luxurious Grand Mansion Estate. Unforgettable moments await!",
+      "guest_count": 150,
+      "img": "https://i.ibb.co/MsxJzvq/birthday-celebrations.jpg"
+    },
+    {
+      "id": 2,
+      "event_type": "Birthday Party",
+      "date": "2023-09-05",
+      "location": "Sunny Gardens Park",
+      "organizer": "Party Planners Unlimited",
+      "details": "Celebrate Sarah's 30th birthday with a picnic-style bash at Sunny Gardens Park.",
+      "guest_count": 50,
+      "img": "https://i.ibb.co/MsxJzvq/birthday-celebrations.jpg"
+    },
+    {
+      "id": 3,
+      "event_type": "Anniversary",
+      "date": "2023-11-12",
+      "location": "Romantic Seaside Restaurant",
+      "organizer": "Elegant Affairs",
+      "details": "Marking 25 years of love and togetherness at a romantic seaside restaurant.",
+      "guest_count": 80,
+      "img": "https://i.ibb.co/MsxJzvq/birthday-celebrations.jpg"
+    },
+    {
+      "id": 4,
+      "event_type": "Engagement Party",
+      "date": "2023-08-25",
+      "location": "Enchanted Garden Pavilion",
+      "organizer": "Cherished Moments Events",
+      "details": "Join us for a magical evening celebrating the engagement of Jessica and Michael.",
+      "guest_count": 75,
+      "img": "https://i.ibb.co/MsxJzvq/birthday-celebrations.jpg"
+    },
+    {
+      "id": 5,
+      "event_type": "Retirement Party",
+      "date": "2023-10-10",
+      "location": "Vintage Banquet Hall",
+      "organizer": "RetireMasters",
+      "details": "Honoring the incredible career of John Smith with a retirement party at the Vintage Banquet Hall.",
+      "guest_count": 100,
+      "img": "https://i.ibb.co/MsxJzvq/birthday-celebrations.jpg"
+    },
+    {
+      "id": 6,
+      "event_type": "Baby Shower",
+      "date": "2023-06-08",
+      "location": "Cozy Nest Cafe",
+      "organizer": "Tiny Toes Events",
+      "details": "A warm and cozy baby shower for the expecting parents. Gifts and games galore!",
+      "guest_count": 40,
+      "img": "https://i.ibb.co/MsxJzvq/birthday-celebrations.jpg"
+    }
+  ]
+  

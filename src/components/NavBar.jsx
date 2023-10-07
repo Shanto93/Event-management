@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const NavBar = () => {
     const links = <>
@@ -27,8 +27,8 @@ const NavBar = () => {
             <div className="navbar-end ">
                 <div className="flex items-center">
                 <h2>Shanto Islam</h2>
-                <img className="w-10 rounded-full ml-2" src="https://i.ibb.co/NsHPCXG/Rectangle-4287-1.png" alt="" />
-                <button className="btn ml-2">Login</button>
+                <img className="w-10 rounded-full ml-2" src="https://i.ibb.co/ZftBmfs/user.png" alt="" />
+                <Link to='/login'><button className="btn ml-2">Login</button></Link>
 
                 </div>
             </div>
