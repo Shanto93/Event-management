@@ -2,6 +2,7 @@ import { useContext } from "react";
 import { Link } from "react-router-dom";
 import { AuthContext } from './../providers/AuthProvider';
 import { updateProfile } from "firebase/auth";
+import Swal from 'sweetalert2'
 
 const Register = () => {
     const {createUser} = useContext(AuthContext);
@@ -17,14 +18,22 @@ const Register = () => {
         const photo = form.get('photo');
         console.log(email, password, name, photo);
 
-        if( !/^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$/ .test(password)){
-            return alert("Minimum six characters, at least one capital letter and one special character");
+        if( !/^(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*#?&])[A-Z\d@$!%*#?&]{8,}$/ .test(password)){
+            return Swal.fire({
+                icon: 'error',
+                title: 'Oops...',
+                text: 'Minimum six characters, at least one capital letter and one special character',
+              })
         }
 
         //create user
         createUser(email, password)
         .then(result => {
             console.log(result.user);
+            Swal.fire(
+                'Registration Completed',
+                'Thank you',
+              )
             updateProfile(result.user,{
                 displayName: name,
                 photoURL:photo
@@ -32,8 +41,13 @@ const Register = () => {
             .then()
             .catch()
         })
+        // eslint-disable-next-line no-unused-vars
         .catch(error => {
-            console.error(error);
+            Swal.fire({
+                icon: 'error',
+                title: 'Oops...',
+                text: 'Something went wrong!',
+              })
         })
 
     }
