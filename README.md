@@ -129,3 +129,40 @@ console.log(count);
 
 </p>
 </details>
+
+# Event Management Website
+
+Welcome to the Event Management Website! This platform simplifies event planning and organization, offering several key features:
+
+1. **User Authentication and Registration**:
+   - Users can create accounts and log in securely.
+
+2. **Event Listings and Details**:
+   - Browse a comprehensive list of managed events on the homepage.
+   - Click on an event to access detailed information and descriptions.
+
+3. **Private User Sections**:
+   - Access exclusive content such as a gallery and contact information after logging in.
+
+4. **Sign Out Functionality**:
+   - Easily log out from the website by clicking the "Sign Out" button.
+
+5. **User Profile Information**:
+   - Display the user's name and profile picture in the navigation bar.
+
+## Getting Started
+
+To get started with the Event Management Website, follow these steps:
+
+1. Clone the repository to your local machine.
+2. Install the required dependencies.
+3. Set up your database and configure the authentication system.
+4. Run the application locally.
+
+Feel free to explore, customize, and enhance the website to meet your specific event management needs.
+
+## Live Website
+
+Here is our live website: [SEvents](https://event-management-9111f.web.app/)
+
+Happy event planning!
