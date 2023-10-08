@@ -7,6 +7,7 @@ import ErrorPage from "../components/ErrorPage";
 import EventDetails from "../components/EventDetails";
 import PrivateRoute from "./PrivateRoute";
 import Gallary from "../components/Gallary";
+import Contact from "../components/Contact";
 
 const router = createBrowserRouter([
     {
@@ -35,6 +36,10 @@ const router = createBrowserRouter([
             {
                 path:'/gallary',
                 element:<PrivateRoute> <Gallary></Gallary> </PrivateRoute>
+            },
+            {
+                path:'/contact',
+                element:<Contact></Contact>,
             }
         ]
 
