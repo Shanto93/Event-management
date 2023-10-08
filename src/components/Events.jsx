@@ -10,7 +10,6 @@ const Events = ({ event }) => {
             </figure>
             <div className="card-body items-center text-center">
                 <h2 className="card-title">{event_type}</h2>
-                <p>{location}</p>
 
                 {
                     details.length > 20?

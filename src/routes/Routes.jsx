@@ -6,6 +6,7 @@ import Register from "../components/Register";
 import ErrorPage from "../components/ErrorPage";
 import EventDetails from "../components/EventDetails";
 import PrivateRoute from "./PrivateRoute";
+import Gallary from "../components/Gallary";
 
 const router = createBrowserRouter([
     {
@@ -29,7 +30,11 @@ const router = createBrowserRouter([
             {
                 path:'/event/:id',
                 element:<PrivateRoute><EventDetails></EventDetails></PrivateRoute>,
-                loader: () => fetch('event.json'),
+                loader: () => fetch('/event.json'),
+            },
+            {
+                path:'/gallary',
+                element:<PrivateRoute> <Gallary></Gallary> </PrivateRoute>
             }
         ]
 

@@ -3,7 +3,8 @@ import { Link, NavLink } from "react-router-dom";
 import { AuthContext } from "../providers/AuthProvider";
 
 const NavBar = () => {
-    const {user, logOut} = useContext(AuthContext);
+    const { user, logOut } = useContext(AuthContext);
+    console.log(user);
 
     const handleSignOut = () => {
         logOut()
@@ -12,9 +13,15 @@ const NavBar = () => {
     }
 
     const links = <>
-   <li> <NavLink to='/' >Home</NavLink> </li>
-   <li> <NavLink to='/login' >Login</NavLink> </li>
-   <li> <NavLink to='/register' >Register</NavLink> </li>
+        <li> <NavLink to='/' >Home</NavLink> </li>
+        {
+            user && <>
+                <li> <NavLink to='/gallary' >Gallary</NavLink> </li>
+            </>
+        }
+        <li> <NavLink to='/login' >Login</NavLink> </li>
+        <li> <NavLink to='/register' >Register</NavLink> </li>
+
     </>
     return (
         <div className="navbar bg-base-100">
@@ -36,23 +43,23 @@ const NavBar = () => {
             </div>
             <div className="navbar-end ">
                 <div className="flex items-center">
-                {
-                    user?
-                    <h2>{user.email}</h2>:
-                    ""
-                }
-                {
-                    user?
-                    <img className="w-10 rounded-full ml-2" src="https://i.ibb.co/ZftBmfs/user.png" alt="" />:
-                    ''
-                }
-                {
-                    user?
-                    <button onClick={handleSignOut} className="btn ml-2">Sign Out</button>:
-                    <Link to='/login'>
-                        <button className="btn ml-2">Login</button>
-                    </Link>
-                }
+                    {
+                        user ?
+                            <h2>{user.displayName}</h2> :
+                            ""
+                    }
+                    {
+                        user ?
+                            <img className="w-10 rounded-full ml-2" src={user.photoURL} alt="" /> :
+                            ''
+                    }
+                    {
+                        user ?
+                            <button onClick={handleSignOut} className="btn ml-2">Sign Out</button> :
+                            <Link to='/login'>
+                                <button className="btn ml-2">Login</button>
+                            </Link>
+                    }
                 </div>
             </div>
         </div>

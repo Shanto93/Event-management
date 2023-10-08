@@ -16,6 +16,10 @@ const Register = () => {
         const photo = form.get('photo');
         console.log(email, password, name, photo);
 
+        if( !/^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$/ .test(password)){
+            return alert("Minimum six characters, at least one capital letter and one special character");
+        }
+
         //create user
         createUser(email, password)
         .then(result => {
