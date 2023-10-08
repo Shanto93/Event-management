@@ -10,7 +10,8 @@ This repository contains a set of multiple-choice questions (MCQs) to test your 
 let greeting;
 greetign = {};
 console.log(greetign);
-Options:
+
+#Options:
 A: {}
 B: ReferenceError: greetign is not defined
 C: undefined
