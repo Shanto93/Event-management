@@ -2,7 +2,7 @@ const Gallary = () => {
     return (
         <div>
             <h2 className="text-3xl font-bold text-center my-5">Beautiful Moments</h2>
-            <div className="grid grid-cols-3 gap-5">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
                 <img src="https://i.ibb.co/ZcQVMRw/people-enjoying-burnt-orange-wedding-banner.jpg" alt="" />
                 <img src="https://i.ibb.co/Z8LFR8q/couple-dancing-ther-wedding.jpg" alt="" />
                 <img src="https://i.ibb.co/Jc6bswY/birthday-party.jpg" alt="" />

@@ -44,7 +44,7 @@ const NavBar = () => {
                 </ul>
             </div>
             <div className="navbar-end ">
-                <div className="flex items-center">
+                <div className="flex-col flex md:flex-row items-center">
                     {
                         user ?
                             <h2>{user.displayName}</h2> :

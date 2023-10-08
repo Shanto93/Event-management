@@ -4,7 +4,7 @@ const Events = ({ event }) => {
     const { id, event_type, img, location, details } = event;
     return (
         <div className="mt-10">
-            <div className="card w-80 bg-base-100 shadow-xl">
+            <div className="card md:w-80 bg-base-100 shadow-xl">
             <figure className="">
                 <img src={img} alt="Shoes" className="rounded-xl" />
             </figure>
