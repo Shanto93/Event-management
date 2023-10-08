@@ -1,8 +1,18 @@
-# React + Vite
+# JavaScript MCQ Test
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This repository contains a set of multiple-choice questions (MCQs) to test your JavaScript knowledge. For each question, choose the correct answer from the options provided and read the explanation to understand why it's the correct choice.
 
-Currently, two official plugins are available:
+## Questions
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### 1. 
+
+```javascript
+let greeting;
+greetign = {};
+console.log(greetign);
+Options:
+A: {}
+B: ReferenceError: greetign is not defined
+C: undefined
+Answer: B
+Explanation: In this code, they declare the variable name as greeting but assign it as greetign (which is misspelled). So,it will show ReferenceError as it is not defined.
