@@ -130,7 +130,7 @@ console.log(count);
 </p>
 </details>
 
-# Event Management Website
+# SEvents
 
 Welcome to the Event Management Website! This platform simplifies event planning and organization, offering several key features:
 
