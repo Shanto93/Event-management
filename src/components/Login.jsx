@@ -4,7 +4,7 @@ import { AuthContext } from "../providers/AuthProvider";
 import Swal from 'sweetalert2'
 
 const Login = () => {
-    const { signIn, signInWithGoogle, user } = useContext(AuthContext);
+    const { signIn, signInWithGoogle } = useContext(AuthContext);
     const location = useLocation();
     const navigate = useNavigate();
  
@@ -13,6 +13,13 @@ const Login = () => {
         signInWithGoogle()
         .then(result => {
             console.log(result.user);
+            Swal.fire({
+                position: 'top-end',
+                icon: 'success',
+                title: 'Logged in  Successfully',
+                showConfirmButton: false,
+                timer: 1500
+              })
             // alert("Successfully Logged in");
             navigate(location?.state? location.state:'/');
             
@@ -29,14 +36,14 @@ const Login = () => {
         // console.log(form.get('email'));
         const email = form.get('email');
         const password = form.get('password');
-        // console.log(email, password);
-        if(user.email !==email){
-            Swal.fire({
-                icon: 'error',
-                title: 'Oops...',
-                text: 'Email does not match',
-              })
-        }
+        console.log(email, password);
+        // if(user.email !==email){
+        //     return Swal.fire({
+        //         icon: 'error',
+        //         title: 'Oops...',
+        //         text: 'Email does not match',
+        //       })
+        // }
 
         signIn(email, password)
             .then(result => {

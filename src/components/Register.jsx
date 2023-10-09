@@ -16,9 +16,9 @@ const Register = () => {
         const password = form.get('password');
         const name = form.get('name');
         const photo = form.get('photo');
-        console.log(email, password, name, photo);
+        // console.log(email, password, name, photo);
 
-        if( !/^(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*#?&])[A-Z\d@$!%*#?&]{8,}$/ .test(password)){
+        if( !/^(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*#?&])[A-Z\d@$!%*#?&]{8,}$/.test(password)){
             return Swal.fire({
                 icon: 'error',
                 title: 'Oops...',
